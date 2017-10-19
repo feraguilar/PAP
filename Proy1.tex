@@ -1,0 +1,35 @@
+
+\title{Estad\'istica Robusta/cluster correlaciones}
+Las estad\'isticas robustas son la teor\'ia de la estabilidad de los procedimientos estad\'isticos. Tienen como objetivo tener una alta eficiencia en un entorno del modelo estad\'istico asumido. Al aplicar un modelo de esta \'indole se pretende lograr un rechazo confiable de los valores at\'ipicos, es decir, con esto se obtiene un cluster de correlaciones ajustado. 
+
+\title{Teor\'ia de Portafolios}
+En la teor\'ia de la cartera media-volatilidad de Markowitz, se modela la tasa de rentabilidad de los activos como variables aleatorias. El objetivo es elegir los factores de ponderaci\'on de la cartera de manera \'optima. En este contexto, un conjunto \'optimo de ponderaciones es aquel en el que la cartera alcanza una tasa de retorno esperada de referencia aceptable con una volatilidad m\'inima. 
+
+Como se puede apreciar en el siguiente gr\'afico la frontera eficiente est\'a compuesta por todas las carteras con rendimiento y volatilidad similares, sin embargo se intentan equilibrar estos dos objetivos en una sola funci\'on con la siguiente f\'ormula: 
+$\Mu \lambda \quad minimize\quad \frac { 1 }{ 2 } { w }^{ T }\Sigma { w }-\lambda { m }^{ T }{w}$
+$subject\quad to\quad { e }^{ T }{w}=1$
+
+\title{Portafolio con bono}
+La cartera formada por instrumentos de renta variable con un instrumento de renta fija proporciona  la  mejor  combinaci\'on  posible, la cual forma el punto de tangencia con la frontera eficiente. Para este caso en espec\'ifico se tom\'o como referencia un bono del tesoro debido a que los instrumentos elegidos cotizan en dicho pa\'is; la siguiente ecuaci\'on proporcionar\'a  el rendimiento del portafolio con un activo sin riesgo: 
+$Ep=Rf+\frac { E_m-R_f }{ { \sigma  }_{ M } } { \sigma  }_{ p }$
+
+\title{Max sharpe min vol}
+El índice de Sharpe se define como la relaci\'on existente entre el beneficio adicional de un fondo de inversi\'on, medido como la diferencia entre la rentabilidad del fondo en concreto y la de un activo sin riesgo, y su volatilidad, medida como su desviaci\'on t\'ipica, como se muestra a continuaci\'on con la siguiente f\'ormula: 
+$Sharpe\quad ratio\quad =\quad \frac { R_p-R_f }{ \sigma_p  }$
+
+Es decir, este \'indice expresa la rentabilidad obtenida por cada unidad de riesgo soportado por el fondo. 
+
+Al condicionar un m\'aximo Sharpe con m\'inima volatilidad se logra encontrar el portafolio \'optimo en el que se invertir\'a. 
+
+\title{Cobertura petr\'oleo}
+Los principales \'indices burs\'atiles se mueven al ritmo que marca el precio del petr\'oleo, provocando as\'i fuertes ca\'idas con las bajadas del barril y repuntes con la subida, en un contexto de elevada volatilidad financiera, haci\'endose a\'un mayor cuando los pron\'osticos apuntan que en el 2018 habr\'a un d\'eficit en la oferta de este \textit{commodity}. 
+
+
+\title{Estrategia Strap}
+Por dicho motivo a continuaci\'on se presenta una estrategia \textit{Strap}, la cual consiste en estar largo en una opci\'on de venta y dos opciones de compra, todo con el mismo precio de ejercicio, vencimiento y activo subyacente. 
+
+Se utiliza una opci\'on \textit{Strap} cuando se cree que el movimiento futuro del precio del activo subyacente ser\'a grande y probablemente tender\'a a subir m\'as que a bajar. Al agregar dos opciones de compra, se tendr\'ia una gran ganancia si el movimiento es ascendente. Pero si el pron\'ostico es incorrecto y el precio cambia por completo, se estar\'a protegido por la opci\'on de venta.
+
+A continuaci\'on se presenta la estrategia de manera gr\'afica: 
+
+
